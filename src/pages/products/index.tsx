@@ -32,13 +32,8 @@ const Products = () => {
                 {products.map(p => {
                     return(
                         <li>
-                            <ProductCard
-                                Title={p.Title}
-                                Year={p.Year}
-                                imdbID={p.imdbID}
-                                Type={p.Type}
-                                Poster={p.Poster}
-                            />
+                            <img src={p.Poster} />
+                            {p.Title}
                         </li>
                     );
                 })}
